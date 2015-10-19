@@ -1,8 +1,9 @@
 # squirrel.custom.yaml
 
 patch:
-  "style/color_scheme": youtube
-  "preset_color_schemes/youtube":
+  # Theme
+  style/color_scheme: youtube
+  preset_color_schemes/youtube:
     name: "YouTube"
     author: "Patricivs ipatrickmac@me.com"
     text_color: 0x000000  #已選候選項顏色
@@ -16,6 +17,21 @@ patch:
     hilited_candidate_text_color: 0xffffff  #首選項文本顏色
     hilited_comment_text_color: 0xffffff  #高亮編碼提示顏色
     hilited_candidate_back_color: 0x230dc3  #首選項高亮背景色
-  "style/font_face": "明兰"  # 字體名稱，從記事本等處的系統字體對話框裏能看到
-  "style/font_point": 16     # 字號，只認數字的，不認「五號」、「小五」這樣的
-  "style/horizontal": true
+  style/font_face: "明兰"  # 字體名稱，從記事本等處的系統字體對話框裏能看到
+  style/font_point: 16     # 字號，只認數字的，不認「五號」、「小五」這樣的
+  style/horizontal: true
+
+  # Behavior
+  app_options:
+      com.alfredapp.Alfred:
+        ascii_mode: false
+      com.apple.Terminal:
+        ascii_mode: false
+      com.blacktree.Quicksilver:
+        ascii_mode: false
+      com.googlecode.iterm2:
+        ascii_mode: false
+      com.runningwithcrayons.Alfred-2:
+        ascii_mode: false
+      org.vim.MacVim:
+        ascii_mode: false
