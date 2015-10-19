@@ -1,0 +1,20 @@
+# default.custom.yaml
+
+patch:
+  schema_list:  # 對於列表類型，現在無有辦法指定如何添加、消除或單一修改某項，於是要在定製檔中將整個列表替換！
+    # - schema: luna_pinyin
+    # - schema: cangjie5
+    # - schema: luna_pinyin_fluency
+    # - schema: luna_pinyin_simp
+    # - schema: my_coolest_ever_schema
+    - schema: wubi86
+    - schema: emoji
+
+  ascii_composer/good_old_caps_lock: true
+  ascii_composer/switch_key:
+    Caps_Lock: noop
+    Control_L: noop
+    Control_R: noop
+    Eisu_toggle: clear
+    Shift_L: noop
+    Shift_R: noop
